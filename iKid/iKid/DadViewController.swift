@@ -26,4 +26,7 @@ class DadViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func btnPress(_ sender: UIButton) {
+        dadLabel.text = "But don’t forget, only 48 hours ago, it was a sadder day."
+    }
 }

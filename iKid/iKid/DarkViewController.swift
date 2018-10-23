@@ -25,4 +25,7 @@ class DarkViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func btnPress(_ sender: UIButton) {
+        darkLabel.text = "None, they just beat the room for being black."
+    }
 }

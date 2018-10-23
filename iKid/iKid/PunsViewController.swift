@@ -27,7 +27,7 @@ class PunsViewController: UIViewController {
     }
 
     @IBAction func btnPress(_ sender: UIButton) {
-        
+        punLabel.text = "They're remarkable."
     }
     
 }

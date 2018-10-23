@@ -27,6 +27,9 @@
                                 <rect key="frame" x="164" y="416" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnPress:" destination="xPA-dR-qAc" eventType="touchUpInside" id="K8d-Qa-BjT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -36,7 +39,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZuQ-kn-HJx"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dad Jokes" id="NCG-Kb-AYe"/>
+                    <tabBarItem key="tabBarItem" title="Dad Jokes" image="dad" landscapeImage="dad" id="NCG-Kb-AYe"/>
                     <connections>
                         <outlet property="dadButton" destination="uYD-qH-qaM" id="LmE-LS-z7X"/>
                         <outlet property="dadLabel" destination="c5D-oZ-Fta" id="cLS-Yt-TrH"/>
@@ -76,7 +79,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Ay-fu-RUP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Puns" id="38v-hh-4Om"/>
+                    <tabBarItem key="tabBarItem" title="Puns" image="pun" landscapeImage="pun" id="38v-hh-4Om"/>
                     <connections>
                         <outlet property="punButton" destination="TEz-AY-vkX" id="XeX-lj-N9k"/>
                         <outlet property="punLabel" destination="xow-VG-meg" id="b5s-bq-IqC"/>
@@ -123,6 +126,9 @@
                                 <rect key="frame" x="171" y="407" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnPress:" destination="WhC-33-ugK" eventType="touchUpInside" id="OFY-s1-dWR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -132,7 +138,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m4R-7K-ezJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dark" id="h6v-QN-Ray"/>
+                    <tabBarItem key="tabBarItem" title="Dark" image="dark" landscapeImage="dark" id="h6v-QN-Ray"/>
                     <connections>
                         <outlet property="darkButton" destination="i3z-kg-YCg" id="ZKG-Xm-ZoS"/>
                         <outlet property="darkLabel" destination="gIq-9e-Rbq" id="S8l-RO-NOB"/>
@@ -143,4 +149,9 @@
             <point key="canvasLocation" x="2692" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dad" width="24" height="28"/>
+        <image name="dark" width="24" height="28"/>
+        <image name="pun" width="24" height="28"/>
+    </resources>
 </document>
