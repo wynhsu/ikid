@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gbb-ww-4hP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dad Jokes-->
+        <scene sceneID="OqM-Qw-YFU">
+            <objects>
+                <viewController storyboardIdentifier="Dad" id="xPA-dR-qAc" customClass="DadViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W7Q-6n-Nuj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="I know a lot of you are sad because it’s a Monday..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5D-oZ-Fta">
+                                <rect key="frame" x="20" y="269" width="335" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYD-qH-qaM">
+                                <rect key="frame" x="164" y="416" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c5D-oZ-Fta" secondAttribute="trailing" constant="20" id="FD8-2d-Iqi"/>
+                            <constraint firstItem="c5D-oZ-Fta" firstAttribute="leading" secondItem="ZuQ-kn-HJx" secondAttribute="leading" constant="20" id="PV1-il-9wq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZuQ-kn-HJx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad Jokes" id="NCG-Kb-AYe"/>
+                    <connections>
+                        <outlet property="dadButton" destination="uYD-qH-qaM" id="LmE-LS-z7X"/>
+                        <outlet property="dadLabel" destination="c5D-oZ-Fta" id="cLS-Yt-TrH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="piX-aM-WEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1873" y="412"/>
+        </scene>
+        <!--Puns-->
+        <scene sceneID="rnG-NY-BBn">
+            <objects>
+                <viewController storyboardIdentifier="Puns" id="3cZ-Nj-Cyl" customClass="PunsViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gOu-cB-tf0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEz-AY-vkX">
+                                <rect key="frame" x="171" y="462" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnPress:" destination="3cZ-Nj-Cyl" eventType="touchUpInside" id="UzE-uw-D2l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Whiteboards aren't just great..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xow-VG-meg">
+                                <rect key="frame" x="20" y="200" width="335" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xow-VG-meg" secondAttribute="trailing" constant="20" id="cAC-Cf-9iD"/>
+                            <constraint firstItem="xow-VG-meg" firstAttribute="leading" secondItem="1Ay-fu-RUP" secondAttribute="leading" constant="20" id="h3g-g9-NJ8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Ay-fu-RUP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Puns" id="38v-hh-4Om"/>
+                    <connections>
+                        <outlet property="punButton" destination="TEz-AY-vkX" id="XeX-lj-N9k"/>
+                        <outlet property="punLabel" destination="xow-VG-meg" id="b5s-bq-IqC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CiE-iK-mHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872.8" y="-309.89505247376314"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UJF-La-MaO">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gbb-ww-4hP" customClass="TabBarController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sXb-KH-cwV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3cZ-Nj-Cyl" kind="relationship" relationship="viewControllers" id="qvB-hh-aGa"/>
+                        <segue destination="xPA-dR-qAc" kind="relationship" relationship="viewControllers" id="5V8-WO-5un"/>
+                        <segue destination="WhC-33-ugK" kind="relationship" relationship="viewControllers" id="jPR-Fr-fwb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3p-r2-VWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="27"/>
+        </scene>
+        <!--Dark-->
+        <scene sceneID="3iH-mW-pVn">
+            <objects>
+                <viewController storyboardIdentifier="Dark" id="WhC-33-ugK" customClass="DarkViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g6B-FC-XtO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="How many cops does it take to screw in a lightbulb?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIq-9e-Rbq">
+                                <rect key="frame" x="20" y="295" width="335" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3z-kg-YCg">
+                                <rect key="frame" x="171" y="407" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="m4R-7K-ezJ" firstAttribute="trailing" secondItem="gIq-9e-Rbq" secondAttribute="trailing" constant="20" id="NBM-5f-VeA"/>
+                            <constraint firstItem="gIq-9e-Rbq" firstAttribute="leading" secondItem="m4R-7K-ezJ" secondAttribute="leading" constant="20" id="Pc0-ft-mRb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m4R-7K-ezJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dark" id="h6v-QN-Ray"/>
+                    <connections>
+                        <outlet property="darkButton" destination="i3z-kg-YCg" id="ZKG-Xm-ZoS"/>
+                        <outlet property="darkLabel" destination="gIq-9e-Rbq" id="S8l-RO-NOB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hp5-Ab-Lky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2692" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>
