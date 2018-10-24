@@ -17,12 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="I know a lot of you are sad because it’s a Monday..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5D-oZ-Fta">
-                                <rect key="frame" x="20" y="269" width="335" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="Z6e-Sq-Wva">
+                                <rect key="frame" x="60" y="80" width="255" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYD-qH-qaM">
                                 <rect key="frame" x="164" y="416" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -31,18 +28,29 @@
                                     <action selector="btnPress:" destination="xPA-dR-qAc" eventType="touchUpInside" id="K8d-Qa-BjT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="I know you're sad because it’s a Monday..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5D-oZ-Fta">
+                                <rect key="frame" x="20" y="269" width="335" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Z6e-Sq-Wva" firstAttribute="leading" secondItem="ZuQ-kn-HJx" secondAttribute="leading" constant="60" id="6IV-Vr-Cmp"/>
                             <constraint firstAttribute="trailing" secondItem="c5D-oZ-Fta" secondAttribute="trailing" constant="20" id="FD8-2d-Iqi"/>
                             <constraint firstItem="c5D-oZ-Fta" firstAttribute="leading" secondItem="ZuQ-kn-HJx" secondAttribute="leading" constant="20" id="PV1-il-9wq"/>
+                            <constraint firstItem="Z6e-Sq-Wva" firstAttribute="top" secondItem="ZuQ-kn-HJx" secondAttribute="top" constant="60" id="PyE-VB-tLF"/>
+                            <constraint firstItem="ZuQ-kn-HJx" firstAttribute="trailing" secondItem="Z6e-Sq-Wva" secondAttribute="trailing" constant="60" id="hqU-Hf-51x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZuQ-kn-HJx"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad Jokes" image="dad" landscapeImage="dad" id="NCG-Kb-AYe"/>
                     <connections>
                         <outlet property="dadButton" destination="uYD-qH-qaM" id="LmE-LS-z7X"/>
+                        <outlet property="dadImage" destination="Z6e-Sq-Wva" id="ZKn-cn-tBd"/>
                         <outlet property="dadLabel" destination="c5D-oZ-Fta" id="cLS-Yt-TrH"/>
+                        <outlet property="dadView" destination="W7Q-6n-Nuj" id="itz-Ii-eq9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="piX-aM-WEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -57,6 +65,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteboard" translatesAutoresizingMaskIntoConstraints="NO" id="7dQ-hx-wFP">
+                                <rect key="frame" x="60" y="80" width="255" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEz-AY-vkX">
                                 <rect key="frame" x="171" y="462" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -74,15 +85,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="7dQ-hx-wFP" firstAttribute="top" secondItem="1Ay-fu-RUP" secondAttribute="top" constant="60" id="bgb-ei-XaA"/>
                             <constraint firstAttribute="trailing" secondItem="xow-VG-meg" secondAttribute="trailing" constant="20" id="cAC-Cf-9iD"/>
+                            <constraint firstItem="1Ay-fu-RUP" firstAttribute="trailing" secondItem="7dQ-hx-wFP" secondAttribute="trailing" constant="60" id="eQe-WF-3qz"/>
                             <constraint firstItem="xow-VG-meg" firstAttribute="leading" secondItem="1Ay-fu-RUP" secondAttribute="leading" constant="20" id="h3g-g9-NJ8"/>
+                            <constraint firstItem="7dQ-hx-wFP" firstAttribute="leading" secondItem="1Ay-fu-RUP" secondAttribute="leading" constant="60" id="pb3-33-2bN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Ay-fu-RUP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Puns" image="pun" landscapeImage="pun" id="38v-hh-4Om"/>
                     <connections>
                         <outlet property="punButton" destination="TEz-AY-vkX" id="XeX-lj-N9k"/>
+                        <outlet property="punImage" destination="7dQ-hx-wFP" id="f2e-vy-cMJ"/>
                         <outlet property="punLabel" destination="xow-VG-meg" id="b5s-bq-IqC"/>
+                        <outlet property="punView" destination="gOu-cB-tf0" id="tlY-OY-qQA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CiE-iK-mHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -116,12 +132,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="How many cops does it take to screw in a lightbulb?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIq-9e-Rbq">
-                                <rect key="frame" x="20" y="295" width="335" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightbulb" translatesAutoresizingMaskIntoConstraints="NO" id="Zar-M3-f7C">
+                                <rect key="frame" x="60" y="80" width="255" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3z-kg-YCg">
                                 <rect key="frame" x="171" y="407" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -130,18 +143,29 @@
                                     <action selector="btnPress:" destination="WhC-33-ugK" eventType="touchUpInside" id="OFY-s1-dWR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="How many cops does it take to screw in a lightbulb?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIq-9e-Rbq">
+                                <rect key="frame" x="20" y="295" width="335" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="m4R-7K-ezJ" firstAttribute="trailing" secondItem="gIq-9e-Rbq" secondAttribute="trailing" constant="20" id="NBM-5f-VeA"/>
                             <constraint firstItem="gIq-9e-Rbq" firstAttribute="leading" secondItem="m4R-7K-ezJ" secondAttribute="leading" constant="20" id="Pc0-ft-mRb"/>
+                            <constraint firstItem="m4R-7K-ezJ" firstAttribute="trailing" secondItem="Zar-M3-f7C" secondAttribute="trailing" constant="60" id="es1-bK-UJK"/>
+                            <constraint firstItem="Zar-M3-f7C" firstAttribute="top" secondItem="m4R-7K-ezJ" secondAttribute="top" constant="60" id="p6a-Jx-TYq"/>
+                            <constraint firstItem="Zar-M3-f7C" firstAttribute="leading" secondItem="m4R-7K-ezJ" secondAttribute="leading" constant="60" id="xWn-a6-APw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m4R-7K-ezJ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dark" image="dark" landscapeImage="dark" id="h6v-QN-Ray"/>
                     <connections>
                         <outlet property="darkButton" destination="i3z-kg-YCg" id="ZKG-Xm-ZoS"/>
+                        <outlet property="darkImage" destination="Zar-M3-f7C" id="Wc2-Nv-o38"/>
                         <outlet property="darkLabel" destination="gIq-9e-Rbq" id="S8l-RO-NOB"/>
+                        <outlet property="darkView" destination="g6B-FC-XtO" id="xqq-x5-LYW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hp5-Ab-Lky" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -152,6 +176,9 @@
     <resources>
         <image name="dad" width="24" height="28"/>
         <image name="dark" width="24" height="28"/>
+        <image name="lightbulb" width="600" height="600"/>
         <image name="pun" width="24" height="28"/>
+        <image name="sad" width="600" height="600"/>
+        <image name="whiteboard" width="600" height="600"/>
     </resources>
 </document>
